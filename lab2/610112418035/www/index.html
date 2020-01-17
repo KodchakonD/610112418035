@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Hello World</title>
+		<script src="js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<h1>Hello World !!!</h1>
+
+		<label id="lb1">Kodchakon</label>
+		<hr>
+		<form id="fm1">
+		<input id="in1" type="number" required>
+		<br>
+		<button type="submit">Calculate</button>
+		</form>
+		<label id="lb_result"></label>
+
+	</body>
+</html>
+<script>
+$(function(){
+	$("#lb1").text("610112418035");
+
+	//$("button").Click(function(){
+		//var value = $("#in1").val();
+		//var result = value * value;
+		//$("#lb_result").html(result);
+	//});
+	 $("#fm1").submit(function(event){		
+	 	var value = $("#in1").val();
+		var result = value * value;
+		$("#lb_result").html(result);
+		event.preventDefault();
+		});
+	 
+}); // jquery Handle // ready
+</script>
